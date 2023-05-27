@@ -1,0 +1,1 @@
+SELECT DISTINCT(address.address) FROM inventory LEFT JOIN store on inventory.store_id = store.store_id LEFT JOIN address ON address.address_id = store.address_id LEFT JOIN film ON inventory.film_id = film.film_id WHERE film.title = "TWISTED PIRATES"; 
